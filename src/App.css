@@ -1,0 +1,14 @@
+.complete {
+    border-left: 3px solid green;
+    position: relative;
+}
+.complete::after {
+    position: absolute;
+    content: 'completed';
+    right: 1px;
+    bottom: 3px;
+    background-color: green;
+    color: white;
+    padding: 2px;
+    border-radius: 3px;
+}
