@@ -1,14 +1,31 @@
-.complete {
-    border-left: 3px solid green;
-    position: relative;
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
 }
-.complete::after {
-    position: absolute;
-    content: 'completed';
-    right: 1px;
-    bottom: 3px;
-    background-color: green;
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 89);
+    margin-bottom: 10px;
     color: white;
-    padding: 2px;
-    border-radius: 3px;
+}
+
+.card .icon {
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.card .icon:hover {
+    color: red;
+}
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: red;
+    color: white;
 }
